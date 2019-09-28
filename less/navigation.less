@@ -14,6 +14,27 @@ nav {
         font-size:4rem;
         margin: 1vw;
 
+
+        @keyframes bounceIn {
+            0% {
+              transform: scale(0.1);
+              opacity: 0;
+            }
+            60% {
+              transform: scale(1.2);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+
+        animation: bounceIn 2s;
+
+        &:hover {
+          -moz-animation-duration: 4s;
+        }
+        
         @media @phone {
           margin-top:4vw;
         }
@@ -24,6 +45,7 @@ nav {
         width: 100%;
         text-align: center;
 
+
         @media @phone {
             margin: 2% 0% 2% 0%;
         }
@@ -33,6 +55,11 @@ nav {
             color: black;
             font-size:1.6rem;
             padding: 2% 1% 0% 1%;
+
+            &:hover {
+                font-size:2em; 
+                color:lightblue;
+            }
 
             @media @phone {
                 padding: 0% 3.5% 0% 3.5%
