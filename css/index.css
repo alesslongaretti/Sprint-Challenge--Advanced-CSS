@@ -200,9 +200,6 @@ nav h1 {
     transform: scale(1);
   }
 }
-nav h1:hover {
-  -moz-animation-duration: 4s;
-}
 @media (max-width: 500px) {
   nav h1 {
     margin-top: 4vw;
